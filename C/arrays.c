@@ -20,7 +20,7 @@ int main(){
         printf("\nDo you want to proceed? ");
         scanf("%s", &response);
 
-        if(response == "No"){
+        if(response != "Yes"){
             break;
         }
     }

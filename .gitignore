@@ -19,6 +19,7 @@ bin-release/
 c-codes/counting
 c-codes/numbers
 C/Static /static
+C/arrays
 
 
 # Added by cargo
