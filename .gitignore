@@ -19,3 +19,8 @@ bin-release/
 c-codes/counting
 c-codes/numbers
 C/Static /static
+
+
+# Added by cargo
+
+/target
