@@ -4,17 +4,19 @@ int inputs_name(int x, int y);
 
 int main(){
     int x, y;
-    int result;
 
-    result = inputs_name(x, y);
-    printf("O valor é %d \n", result);
+    inputs_name(x, y);
     return 0;
 }
 
 int inputs_name(int x, int y){
+    int res;
+    
     x = scanf("%d", &x);
     y = scanf("%d", &y);
 
-    x += y;
-    return x;
+    res = x + y;
+
+    printf("O valor é %d \n", res);
+    return res;
 }
