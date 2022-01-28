@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int array[5] = {10, 20, 30, 40, 50};
-    int *ptr = array;
-    int num;
+    const int array[] = {10, 20, 30, 40, 50};
+    const int *ptr = array;
+    char c;
 
-    for(num; num < 5; ++num){
-        printf("The actual value is %d", *(ptr + 1)); 
+    for(c = 0; c < sizeof(array)/sizeof(int); c++){
+        printf("The actual value is %d \n", *(ptr++)); 
     }
     return 0;
 }

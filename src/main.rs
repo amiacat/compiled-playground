@@ -1,8 +1,5 @@
 fn main() {
-    let mut num1 = 5;
-    let mut num2 = 5;
-    
-    let mut res = num1 + num2;
+    let variable: Vec<i32> = vec![1, 2, 3];
 
-    println!("{}", res);
+    println!("The value is {:?}", variable);
 }
