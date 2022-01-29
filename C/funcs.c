@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int pointer(int *a);
+int *pointer(int *a);
 
 int main(){
-    int y;
+    int y = 5;
     
-    int res = pointer(y);
-    printf("The value is %d", res);
+    *pointer(&y);
     return 0;
 }
 
-int pointer(int *a){
-    printf("Meu penes");
+int *pointer(int *a){
+    printf("The value is %d \n", *(a));
+    return a;
 }
