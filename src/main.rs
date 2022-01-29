@@ -1,5 +1,15 @@
-fn main() {
-    let variable: Vec<i32> = vec![1, 2, 3];
+fn readln() -> String {
+    use std::io::stdin;
+    let mut buf = String::new();
+    stdin().read_line(&mut buf).unwrap();
+    buf = buf.trim().to_string();
+    buf
+}
 
-    println!("The value is {:?}", variable);
+fn main(){
+    println!("Type your name: ");
+
+    let mut name = readln();
+
+    println!("Hello {}!", name);
 }
