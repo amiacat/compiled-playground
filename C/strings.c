@@ -3,18 +3,17 @@
 #include <string.h>
 
 int main(){
-    char string[4] = "dad";
-    char string_2[5] = "guys";
+    char container[20];
+    char fox[4];
+    char red[4];
+    int num = 1;
+    char *nums[2];
 
-    printf("Type a value to string: ");
-    fgets(string, 4, stdin);
-    printf("\nType another value: ");
-    fgets(string_2, 5, stdin);
+    strcpy(container,"Red fox");
+    sscanf(container,"%s %s", red, fox);
+    printf("It is a %s %s \n", red, fox);
 
-    bool res = strcpr(string, string_2);
-    
-    if(res == 1){
-        printf("It is false");
-    }
+    sprintf(*nums,"%ls", &num);
+    printf("\n %s", *(nums));
     return 0;
 }
