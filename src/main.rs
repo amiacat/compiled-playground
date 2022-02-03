@@ -7,9 +7,7 @@ fn readln() -> String {
 }
 
 fn main(){
-    println!("Type your name: ");
+    let var = readln();
 
-    let mut name = readln();
-
-    println!("Hello {}!", name);
+    println!("The value is {var}");
 }

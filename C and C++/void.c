@@ -4,13 +4,13 @@
 int main(){
     void *ptr;
     int num;
-    char name[10];
+    char name[5];
 
     printf("Type something: ");
     scanf("%d", &num);
 
-    printf()
-    fgets(name, 10, stdin);
+    printf("Type a string: ");
+    fgets(name, 5, stdin);
 
     ptr = &num;
 
