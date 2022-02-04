@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
 
 int main(){
-    int x = 2;
-    float y = 5.2;
+    struct array {
+        int num;
+        char clang;
+        float numf;
+    };
 
-    void *arr[2] = {&x, &y};
+    struct array call;
 
-    printf("The array is %p", arr);
-    
+    call.num = 50;
+    printf("The value of struct is %d \n", call.num);
     return 0;
 }
