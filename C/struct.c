@@ -11,13 +11,12 @@ int main(){
     struct human data;
 
     printf("Type your name: ");
-    fgets(data.age, 20, stdin);
-    fflush(stdin);
+    scanf("%s", data.name);
 
     printf("Type your age: ");
     scanf("%d", &data.age);
 
     printf("\nThe value of your age is %d", data.age);
-    printf("\nYour name is %s", *(data.name));
+    printf("\nYour name is %s", data.name);
     return 0;
 }
