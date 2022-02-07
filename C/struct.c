@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct human {
+typedef struct {
     int age;
     char name[20];
-};
+} human;
 
 int main(){
-    struct human data;
+    human data;
 
     printf("Type your name: ");
     scanf("%s", data.name);
